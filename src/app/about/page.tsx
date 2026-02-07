@@ -9,13 +9,13 @@ import { PROCESS_STANDARDS } from "@/lib/constants";
 import {
   Target,
   Eye,
-  Lightbulb,
   Handshake,
   ShieldCheck,
   MapPin,
   Briefcase,
   Cpu,
   Users,
+  RefreshCw,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: <Lightbulb className="h-6 w-6" />,
-    title: "Innovation",
+    icon: <RefreshCw className="h-6 w-6" />,
+    title: "Iteration",
     description:
-      "We push the boundaries of what is possible in manufacturing technology, advancing AI approaches that learn from real production data.",
+      "Optimal solutions emerge through repeated, guided refinement. We design for progressive clarity, not one-shot delivery.",
   },
   {
     icon: <Target className="h-6 w-6" />,
@@ -45,9 +45,9 @@ const values = [
   },
   {
     icon: <Handshake className="h-6 w-6" />,
-    title: "Partnership",
+    title: "Co-Creation",
     description:
-      "We embed with your team, transfer knowledge, and build your internal capability—not dependency on external consultants.",
+      "Clients are co-creators, not passive recipients. We embed with your team, transfer knowledge, and build internal capability—not dependency.",
   },
 ];
 
@@ -89,13 +89,13 @@ export default function AboutPage() {
               About Iteranium
             </p>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Building the Next Generation of Intelligent Manufacturing Systems
+              The Element of Improvement
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              We are focused on helping discrete manufacturers modernize and
-              optimize operations through full-stack Industry 4.0
-              transformation, combining IIoT, MES, and reinforcement-learning
-              AI designed to learn from live shop-floor data.
+              Iteranium operates on the belief that sustainable transformation
+              is achieved through structured iteration, not one-time
+              interventions. We help discrete manufacturers arrive at
+              solutions they can trust, operate, and grow with.
             </p>
           </div>
         </Container>
@@ -108,31 +108,38 @@ export default function AboutPage() {
             <div>
               <SectionHeading
                 eyebrow="Our Story"
-                heading="Built by Manufacturing Technologists"
+                heading="Built on Iteration, Not Assumption"
                 align="left"
               />
               <div className="space-y-4 text-slate-600">
                 <p>
-                  Iteranium was founded with a clear conviction: discrete
-                  manufacturers deserve technology partners who understand the
-                  shop floor as well as the server room. Too many Industry 4.0
-                  initiatives fail because they are led by IT generalists
-                  who do not understand manufacturing operations.
+                  The name <strong>Iteranium</strong> is derived from{" "}
+                  <em>iteration</em>—repeated refinement, learning, and
+                  improvement—combined with <em>&quot;-anium&quot;</em>,
+                  inspired by elemental naming, symbolizing a fundamental
+                  building block. We are an enabling element that improves
+                  processes, systems, decision-making, and outcomes.
                 </p>
                 <p>
-                  We are assembling a team of manufacturing systems engineers,
-                  AI researchers, and operational technology specialists who
-                  have worked inside factories—not just consulted for them. Our
-                  approach to AI goes beyond historical analytics; we are
-                  building reinforcement-learning systems designed to learn
-                  continuously from live production, adapting to the realities
-                  of changeovers, material variability, and equipment aging.
+                  We do not claim to have the answer upfront. Instead, we guide
+                  clients through structured choices toward the right-fit
+                  solution. Every engagement begins with disciplined process
+                  discovery and current-state assessment—mapping workflows,
+                  constraints, and organizational maturity before a single line
+                  of code is written.
+                </p>
+                <p>
+                  From there, solutions emerge through multiple reviews,
+                  progressive refinement, and increasing clarity. Our clients
+                  are co-creators, not passive recipients—and the goal is
+                  always to arrive at an outcome where trade-offs are
+                  understood, risks are explicit, and decisions are defensible.
                 </p>
                 <p>
                   Based in Ontario, Canada, we are committed to developing
                   world-class manufacturing AI right here at home—building
-                  Canadian intellectual property that will help manufacturers
-                  compete on the global stage.
+                  Canadian expertise that helps manufacturers compete on the
+                  global stage.
                 </p>
               </div>
             </div>
@@ -234,7 +241,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Our Commitment"
             heading="Built to Enterprise Standards"
-            description="Our engineering processes are designed to meet the rigour expected by enterprise and government stakeholders."
+            description="Our processes are designed around internationally recognized principles of quality management, information security, and process maturity—ensuring rigour, consistency, and a trustworthy client experience."
           />
           <div className="grid gap-6 sm:grid-cols-3">
             {PROCESS_STANDARDS.map((standard) => (

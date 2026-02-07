@@ -13,18 +13,18 @@ export const SITE_CONFIG = {
 
 export const PROCESS_STANDARDS = [
   {
-    name: "Enterprise-Grade Security",
+    name: "Information Security",
     description:
-      "Rigorous information security practices and data protection built into every engagement",
+      "Rigorous data protection and security practices aligned with enterprise information security management principles",
   },
   {
-    name: "Quality-First Delivery",
+    name: "Quality Management",
     description:
-      "Structured quality management processes across the full project lifecycle",
+      "Structured quality processes with risk-based thinking and continuous improvement across every project lifecycle",
   },
   {
-    name: "Mature Engineering Processes",
+    name: "Process Maturity",
     description:
-      "Defined, repeatable, and continuously improving development practices",
+      "Defined, repeatable, and auditable engineering workflows designed around recognized process maturity frameworks",
   },
 ] as const;

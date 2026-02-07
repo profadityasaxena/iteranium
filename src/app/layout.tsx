@@ -12,8 +12,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://iteranium.com"),
   title: {
-    default: "Iteranium | Industry 4.0 Digital Transformation",
-    template: "%s | Iteranium",
+    default: "Iteranium — Industry 4.0 & AI",
+    template: "%s — Iteranium",
   },
   description:
     "We help discrete manufacturers modernize and optimize operations through full-stack Industry 4.0 transformation. IIoT, MES, and reinforcement-learning-driven AI for scheduling, downtime reduction, and throughput optimization.",
@@ -46,7 +46,8 @@ export const metadata: Metadata = {
       "Full-stack Industry 4.0 transformation for discrete manufacturers.",
   },
   icons: {
-    icon: "/images/favicon.png",
+    icon: { url: "/images/favicon.png", type: "image/png" },
+    apple: "/images/favicon.png",
   },
   robots: {
     index: true,

@@ -7,7 +7,16 @@ import { Input, Textarea } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { SITE_CONFIG } from "@/lib/constants";
-import { Mail, Phone, MapPin, ChevronDown, Building2 } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  ChevronDown,
+  RefreshCw,
+  ClipboardCheck,
+  Users,
+  Target,
+} from "lucide-react";
 
 const industries = [
   "Automotive & Auto Components",
@@ -100,6 +109,77 @@ export default function ContactPage() {
               we&apos;ll schedule a consultation to discuss your specific
               challenges and goals.
             </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Philosophy & Approach */}
+      <section className="border-y border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-500">
+              Our Philosophy
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              The Element of Improvement
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">
+              Iteranium is built on the belief that the right solution is rarely
+              found in a single step. Through structured iteration, disciplined
+              process mapping, and standards-driven design, we help organizations
+              arrive at solutions they can trust, operate, and grow with.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="text-center">
+              <div className="mx-auto mb-4 inline-flex rounded-lg bg-primary-50 p-3 text-primary-500">
+                <ClipboardCheck className="h-6 w-6" />
+              </div>
+              <h3 className="mb-2 font-semibold text-slate-900">
+                Discover &amp; Map
+              </h3>
+              <p className="text-sm text-slate-600">
+                Every engagement begins with structured process discovery,
+                current-state assessment, and constraint identification.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto mb-4 inline-flex rounded-lg bg-primary-50 p-3 text-primary-500">
+                <RefreshCw className="h-6 w-6" />
+              </div>
+              <h3 className="mb-2 font-semibold text-slate-900">
+                Iterate &amp; Refine
+              </h3>
+              <p className="text-sm text-slate-600">
+                Solutions emerge through multiple reviews, progressive
+                refinement, and increasing clarity—not one-shot guesswork.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto mb-4 inline-flex rounded-lg bg-primary-50 p-3 text-primary-500">
+                <Users className="h-6 w-6" />
+              </div>
+              <h3 className="mb-2 font-semibold text-slate-900">
+                Co-Create
+              </h3>
+              <p className="text-sm text-slate-600">
+                Clients are co-creators, not passive recipients. We guide
+                structured choices toward the right-fit solution together.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto mb-4 inline-flex rounded-lg bg-primary-50 p-3 text-primary-500">
+                <Target className="h-6 w-6" />
+              </div>
+              <h3 className="mb-2 font-semibold text-slate-900">
+                Optimal Outcome
+              </h3>
+              <p className="text-sm text-slate-600">
+                We arrive at a point where trade-offs are understood, risks are
+                explicit, and decisions are defensible.
+              </p>
+            </div>
           </div>
         </Container>
       </section>

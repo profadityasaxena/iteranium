@@ -1,31 +1,31 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Cpu, Layers, TrendingUp, MapPin } from "lucide-react";
+import { RefreshCw, ClipboardCheck, Users, Layers } from "lucide-react";
 
 const differentiators = [
   {
-    icon: <Cpu className="h-6 w-6" />,
-    title: "AI Designed for Production Data",
+    icon: <ClipboardCheck className="h-6 w-6" />,
+    title: "Consulting-First, Always",
     description:
-      "Our approach uses reinforcement-learning models designed to train on live shop-floor data—adapting to unique operational patterns rather than relying on generic algorithms.",
+      "Every engagement begins with structured process discovery, current-state assessment, and constraint identification—before we propose a single solution.",
+  },
+  {
+    icon: <RefreshCw className="h-6 w-6" />,
+    title: "Iterative by Design",
+    description:
+      "Solutions emerge through multiple reviews and progressive refinement. We iterate toward clarity and confidence, not one-shot guesswork.",
+  },
+  {
+    icon: <Users className="h-6 w-6" />,
+    title: "Clients as Co-Creators",
+    description:
+      "We guide structured choices, not prescribe answers. Your stakeholders, technical leads, and delivery constraints shape every design decision.",
   },
   {
     icon: <Layers className="h-6 w-6" />,
-    title: "End-to-End, Not Piecemeal",
+    title: "Standards-Driven Rigour",
     description:
-      "Full-stack from edge sensors to executive dashboards. We design the entire technology stack so nothing falls through the cracks.",
-  },
-  {
-    icon: <TrendingUp className="h-6 w-6" />,
-    title: "Systems Thinking at Every Level",
-    description:
-      "We approach manufacturing transformation as an interconnected system—bridging operations, technology, and strategy to deliver coherent, sustainable outcomes.",
-  },
-  {
-    icon: <MapPin className="h-6 w-6" />,
-    title: "Ontario-Based, Industry-Focused",
-    description:
-      "Headquartered in Ontario, we are building deep expertise in manufacturing systems and AI—contributing to Canada's growing advanced manufacturing ecosystem.",
+      "Our processes align with internationally recognized principles of quality management and process maturity—ensuring consistency, auditability, and trust.",
   },
 ];
 
@@ -35,8 +35,8 @@ export function ValueProposition() {
       <Container>
         <SectionHeading
           eyebrow="Why Iteranium"
-          heading="Built Different for Manufacturing"
-          description="We are not a generic IT consultancy. We are manufacturing technology specialists who understand the shop floor."
+          heading="The Element of Improvement"
+          description="We don't claim to have the answer upfront. We guide you through structured iteration—mapping, refining, and co-creating until the solution is one you can trust, operate, and grow with."
         />
 
         <div className="grid gap-8 md:grid-cols-2">

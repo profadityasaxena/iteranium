@@ -24,27 +24,27 @@ const iconMap: Record<string, React.ReactNode> = {
 const methodology = [
   {
     step: "01",
-    title: "Assess",
+    title: "Discover & Map",
     description:
-      "Current state evaluation and opportunity identification. We audit your production systems, data infrastructure, and operational processes.",
+      "Every engagement starts with structured consulting—process discovery, current-state assessment, constraint identification, and goal clarification. We map before we move.",
   },
   {
     step: "02",
-    title: "Design",
+    title: "Iterate & Design",
     description:
-      "Architecture and roadmap development. We design the target state and build a phased execution plan aligned to your business outcomes.",
+      "Solutions emerge through multiple reviews and progressive refinement. We evaluate options, discuss trade-offs, and co-create the target architecture with your team.",
   },
   {
     step: "03",
-    title: "Implement",
+    title: "Build & Validate",
     description:
-      "Agile delivery with continuous validation. We deploy in sprints, testing each component against real production conditions.",
+      "Phased delivery with continuous validation. Each component is tested against real production conditions and refined through feedback loops.",
   },
   {
     step: "04",
-    title: "Optimize",
+    title: "Refine & Grow",
     description:
-      "Ongoing AI-driven improvement. Our reinforcement-learning systems continuously learn and adapt to optimize your operations.",
+      "Ongoing improvement through data-driven learning. Systems adapt, processes mature, and outcomes compound as we iterate toward sustained performance.",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Our Approach"
             heading="How We Work"
-            description="A proven methodology that delivers results at every phase."
+            description="Structured iteration from discovery through delivery—because the right solution emerges through refinement, not assumption."
           />
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {methodology.map((step) => (
