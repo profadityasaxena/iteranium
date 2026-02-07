@@ -1,7 +1,15 @@
 import type { NavItem } from "@/types/navigation";
 
 export const mainNavigation: NavItem[] = [
-  { label: "About", href: "/about" },
+  {
+    label: "About Us",
+    href: "/about",
+    children: [
+      { label: "About Iteranium", href: "/about" },
+      { label: "Team", href: "/about/team" },
+      { label: "Careers", href: "/careers" },
+    ],
+  },
   {
     label: "Services",
     href: "/services",
@@ -20,5 +28,4 @@ export const mainNavigation: NavItem[] = [
   { label: "Training & Incubation", href: "/training" },
   { label: "Industries", href: "/industries" },
   { label: "Insights", href: "/insights" },
-  { label: "Careers", href: "/careers" },
 ];

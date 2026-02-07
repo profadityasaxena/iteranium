@@ -4,7 +4,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
-import { TeamGrid } from "@/components/sections/TeamGrid";
 import { CTASection } from "@/components/sections/CTASection";
 import { jobOpenings } from "@/content/careers";
 import { MapPin, Briefcase, Users, Rocket, GraduationCap, Heart } from "lucide-react";
@@ -56,8 +55,9 @@ export default function CareersPage() {
               Build the Future of Manufacturing
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              Join a team of manufacturing technologists, AI researchers, and
-              systems engineers who are transforming how the world makes things.
+              We hire practitioners with real hands-on experience—people who
+              have built, deployed, and operated systems in industrial
+              automation, AI, data engineering, and manufacturing technology.
               Based in Ontario, Canada.
             </p>
           </div>
@@ -85,10 +85,34 @@ export default function CareersPage() {
         </Container>
       </section>
 
-      {/* Team */}
-      <div className="bg-slate-50">
-        <TeamGrid />
-      </div>
+      {/* What We Look For */}
+      <section className="bg-slate-50 py-16 lg:py-24">
+        <Container>
+          <SectionHeading
+            eyebrow="Who We Hire"
+            heading="Industry Experience Matters"
+            description="We value hands-on experience over credentials alone. If you've worked in the environments we serve, you'll thrive here."
+          />
+          <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2">
+            {[
+              "Industrial automation & control systems (PLC, SCADA, DCS)",
+              "Manufacturing execution systems (MES/MOM)",
+              "AI / Machine learning applied to production data",
+              "Data engineering & industrial data platforms",
+              "IIoT architecture & OT-IT integration",
+              "Cloud-native manufacturing solutions",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3"
+              >
+                <div className="h-2 w-2 shrink-0 rounded-full bg-primary-500" />
+                <span className="text-sm text-slate-700">{skill}</span>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
 
       {/* Open Positions */}
       <section className="py-16 lg:py-24">
@@ -96,7 +120,7 @@ export default function CareersPage() {
           <SectionHeading
             eyebrow="Open Positions"
             heading="Current Opportunities"
-            description="We’re growing our Ontario-based team. All positions contribute to building Canadian IP in manufacturing AI."
+            description="We're growing our Ontario-based team. All positions contribute to building Canadian expertise in manufacturing AI."
           />
           <div className="space-y-6">
             {jobOpenings.map((job, index) => (

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { TeamGrid } from "@/components/sections/TeamGrid";
 import { CTASection } from "@/components/sections/CTASection";
 import { PROCESS_STANDARDS } from "@/lib/constants";
 import {
@@ -231,9 +230,6 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
-
-      {/* Team */}
-      <TeamGrid />
 
       {/* Process Standards */}
       <section className="bg-slate-50 py-16 lg:py-24">

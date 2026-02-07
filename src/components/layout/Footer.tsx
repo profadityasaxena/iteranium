@@ -6,6 +6,7 @@ import { SITE_CONFIG, PROCESS_STANDARDS } from "@/lib/constants";
 const footerLinks = {
   company: [
     { label: "About", href: "/about" },
+    { label: "Team", href: "/about/team" },
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },
   ],
