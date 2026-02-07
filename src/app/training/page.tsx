@@ -74,14 +74,14 @@ const incubationPhases = [
 ];
 
 const incubationBenefits = [
-  "Access to Iteranium’s proprietary Industry 4.0 technology platform",
-  "Dedicated solution architects and manufacturing domain experts",
+  "Access to Iteranium's Industry 4.0 technology stack and development tools",
+  "Guidance from manufacturing domain experts and solution architects",
   "Funding application support (IRAP, OCI, FedDev, SRED)",
   "Go-to-market strategy and customer introduction support",
   "Shared infrastructure and development environments",
   "Mentorship from senior Industry 4.0 practitioners",
-  "Connection to Ontario’s advanced manufacturing ecosystem",
-  "Product validation with real manufacturing partners",
+  "Connection to Ontario's advanced manufacturing ecosystem",
+  "Product validation and go-to-market support",
 ];
 
 export default function TrainingPage() {

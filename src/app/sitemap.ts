@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { industries } from "@/content/industries";
-import { caseStudies } from "@/content/case-studies";
 import { blogPosts } from "@/content/insights";
 
 const BASE_URL = "https://iteranium.com";
@@ -31,11 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/case-studies`,
-      lastModified: new Date(),
-      priority: 0.7,
-    },
-    {
       url: `${BASE_URL}/insights`,
       lastModified: new Date(),
       priority: 0.7,
@@ -51,17 +45,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const caseStudyPages: MetadataRoute.Sitemap = caseStudies.map((cs) => ({
-    url: `${BASE_URL}/case-studies/${cs.slug}`,
-    lastModified: new Date(),
-    priority: 0.6,
-  }));
-
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE_URL}/insights/${post.slug}`,
     lastModified: new Date(post.publishedAt),
     priority: 0.6,
   }));
 
-  return [...staticPages, ...industryPages, ...caseStudyPages, ...blogPages];
+  return [...staticPages, ...industryPages, ...blogPages];
 }

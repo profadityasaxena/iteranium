@@ -5,35 +5,28 @@ import { Cpu, Layers, TrendingUp, MapPin } from "lucide-react";
 const differentiators = [
   {
     icon: <Cpu className="h-6 w-6" />,
-    title: "AI That Learns From YOUR Data",
+    title: "AI Designed for Production Data",
     description:
-      "Reinforcement-learning models trained on live shop-floor data—not generic algorithms. Our AI adapts to your unique operational patterns.",
+      "Our approach uses reinforcement-learning models designed to train on live shop-floor data—adapting to unique operational patterns rather than relying on generic algorithms.",
   },
   {
     icon: <Layers className="h-6 w-6" />,
     title: "End-to-End, Not Piecemeal",
     description:
-      "Full-stack from edge sensors to executive dashboards. We own the entire technology stack so nothing falls through the cracks.",
+      "Full-stack from edge sensors to executive dashboards. We design the entire technology stack so nothing falls through the cracks.",
   },
   {
     icon: <TrendingUp className="h-6 w-6" />,
-    title: "Proven at Scale",
+    title: "Systems Thinking at Every Level",
     description:
-      "Deployed for large global manufacturers across automotive, EVs, electronics, and food and beverage sectors.",
+      "We approach manufacturing transformation as an interconnected system—bridging operations, technology, and strategy to deliver coherent, sustainable outcomes.",
   },
   {
     icon: <MapPin className="h-6 w-6" />,
-    title: "Canadian Innovation",
+    title: "Ontario-Based, Industry-Focused",
     description:
-      "R&D and intellectual property developed in Canada. Contributing to Ontario’s advanced manufacturing ecosystem and local economic growth.",
+      "Headquartered in Ontario, we are building deep expertise in manufacturing systems and AI—contributing to Canada's growing advanced manufacturing ecosystem.",
   },
-];
-
-const stats = [
-  { value: "50+", label: "Manufacturing Lines Optimized" },
-  { value: "30%", label: "Average Throughput Increase" },
-  { value: "99.5%", label: "System Uptime" },
-  { value: "45%", label: "Downtime Reduction" },
 ];
 
 export function ValueProposition() {
@@ -43,7 +36,7 @@ export function ValueProposition() {
         <SectionHeading
           eyebrow="Why Iteranium"
           heading="Built Different for Manufacturing"
-          description="We’re not a generic IT consultancy. We’re manufacturing technology specialists who understand the shop floor."
+          description="We are not a generic IT consultancy. We are manufacturing technology specialists who understand the shop floor."
         />
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -58,18 +51,6 @@ export function ValueProposition() {
                 </h3>
                 <p className="text-slate-600">{item.description}</p>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Stats Row */}
-        <div className="mt-16 grid grid-cols-2 gap-8 border-t border-slate-200 pt-12 lg:grid-cols-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <p className="text-3xl font-bold text-primary-500 lg:text-4xl">
-                {stat.value}
-              </p>
-              <p className="mt-1 text-sm text-slate-600">{stat.label}</p>
             </div>
           ))}
         </div>

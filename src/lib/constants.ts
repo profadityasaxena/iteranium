@@ -8,9 +8,6 @@ export const SITE_CONFIG = {
   phone: "+1 (437) 848-9595",
   offices: [
     { city: "Toronto", region: "Ontario", country: "Canada", isHQ: true },
-    { city: "Pune", region: "Maharashtra", country: "India", isHQ: false },
-    { city: "Delhi", region: "NCR", country: "India", isHQ: false },
-    { city: "Bangalore", region: "Karnataka", country: "India", isHQ: false },
   ],
 } as const;
 

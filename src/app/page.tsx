@@ -3,7 +3,7 @@ import { SocialProof } from "@/components/sections/SocialProof";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { ValueProposition } from "@/components/sections/ValueProposition";
 import { IndustriesGrid } from "@/components/sections/IndustriesGrid";
-import { FeaturedCaseStudy } from "@/components/sections/FeaturedCaseStudy";
+import { FeaturedInsights } from "@/components/sections/FeaturedInsights";
 import { CTASection } from "@/components/sections/CTASection";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <ServicesOverview />
       <ValueProposition />
       <IndustriesGrid />
-      <FeaturedCaseStudy />
+      <FeaturedInsights />
       <CTASection />
     </>
   );

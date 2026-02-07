@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { NavLink } from "./NavLink";
 import { mainNavigation } from "@/content/navigation";
 import { cn } from "@/lib/utils";
@@ -56,14 +55,17 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 right-0 left-0 z-50 transition-all duration-300",
+        "fixed top-0 right-0 left-0 z-50 transition-all duration-500",
         isScrolled
-          ? "border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur-md"
-          : "bg-white"
+          ? "bg-white/80 shadow-lg shadow-slate-900/5 backdrop-blur-xl"
+          : "bg-white/60 backdrop-blur-sm"
       )}
     >
+      {/* Gradient accent line */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-primary-500 to-transparent" />
+
       <Container>
-        <div className="flex h-20 items-center justify-between lg:h-24">
+        <div className="flex h-18 items-center justify-between lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -71,13 +73,13 @@ export function Header() {
               alt="Iteranium"
               width={260}
               height={65}
-              className="h-14 w-auto lg:h-18"
+              className="h-12 w-auto lg:h-14"
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-7 lg:flex">
             {mainNavigation.map((item) =>
               item.children ? (
                 <div
@@ -86,20 +88,24 @@ export function Header() {
                   onMouseEnter={() => handleDropdownEnter(item.label)}
                   onMouseLeave={handleDropdownLeave}
                 >
-                  <button className="flex items-center gap-1 text-sm font-medium text-slate-700 transition-colors hover:text-primary-500">
+                  <button className="nav-link flex items-center gap-1 text-sm font-medium text-slate-600 transition-colors hover:text-primary-500">
                     {item.label}
-                    <ChevronDown className="h-4 w-4" />
+                    <ChevronDown
+                      className={cn(
+                        "h-3.5 w-3.5 transition-transform duration-200",
+                        openDropdown === item.label && "rotate-180"
+                      )}
+                    />
                   </button>
                   {openDropdown === item.label && (
                     <>
-                      {/* Invisible bridge to prevent gap-triggered close */}
                       <div className="absolute top-full left-0 h-3 w-64" />
-                      <div className="absolute top-full left-0 mt-3 w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-lg">
+                      <div className="absolute top-full left-0 mt-3 w-64 rounded-xl border border-slate-100 bg-white/95 p-2 shadow-xl shadow-slate-900/10 backdrop-blur-lg">
                         {item.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="block rounded-lg px-4 py-3 text-sm text-slate-700 transition-colors hover:bg-slate-50 hover:text-primary-500"
+                            className="block rounded-lg px-4 py-3 text-sm text-slate-600 transition-all hover:bg-primary-50/80 hover:text-primary-600 hover:pl-5"
                             onClick={() => setOpenDropdown(null)}
                           >
                             {child.label}
@@ -119,21 +125,24 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Button href="/contact" size="sm">
+            <Link
+              href="/contact"
+              className="relative inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-primary-500/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/40 hover:brightness-110"
+            >
               Contact Us
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="flex items-center justify-center lg:hidden"
+            className="flex items-center justify-center rounded-lg p-2 transition-colors hover:bg-slate-100 lg:hidden"
             onClick={() => setIsMobileOpen(!isMobileOpen)}
             aria-label={isMobileOpen ? "Close menu" : "Open menu"}
           >
             {isMobileOpen ? (
-              <X className="h-6 w-6 text-slate-700" />
+              <X className="h-5 w-5 text-slate-700" />
             ) : (
-              <Menu className="h-6 w-6 text-slate-700" />
+              <Menu className="h-5 w-5 text-slate-700" />
             )}
           </button>
         </div>
@@ -141,13 +150,13 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMobileOpen && (
-        <div className="fixed inset-0 top-16 z-40 bg-white lg:hidden">
+        <div className="fixed inset-0 top-[74px] z-40 bg-white/95 backdrop-blur-xl lg:hidden">
           <nav className="flex flex-col gap-1 p-4">
             {mainNavigation.map((item) => (
               <div key={item.label}>
                 <Link
                   href={item.href}
-                  className="block rounded-lg px-4 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-primary-500"
+                  className="block rounded-lg px-4 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-primary-50 hover:text-primary-600"
                   onClick={() => setIsMobileOpen(false)}
                 >
                   {item.label}
@@ -158,7 +167,7 @@ export function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block rounded-lg px-4 py-2 text-sm text-slate-500 transition-colors hover:bg-slate-50 hover:text-primary-500"
+                        className="block rounded-lg px-4 py-2 text-sm text-slate-500 transition-colors hover:bg-primary-50 hover:text-primary-600"
                         onClick={() => setIsMobileOpen(false)}
                       >
                         {child.label}
@@ -169,13 +178,13 @@ export function Header() {
               </div>
             ))}
             <div className="mt-4 px-4">
-              <Button
+              <Link
                 href="/contact"
-                className="w-full"
+                className="block w-full rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 px-6 py-3 text-center text-base font-medium text-white shadow-md shadow-primary-500/25"
                 onClick={() => setIsMobileOpen(false)}
               >
                 Contact Us
-              </Button>
+              </Link>
             </div>
           </nav>
         </div>

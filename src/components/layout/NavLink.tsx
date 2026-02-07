@@ -18,10 +18,10 @@ export function NavLink({ href, children, className }: NavLinkProps) {
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors duration-200",
+        "nav-link text-sm font-medium transition-colors duration-200",
         isActive
           ? "text-primary-500"
-          : "text-slate-700 hover:text-primary-500",
+          : "text-slate-600 hover:text-primary-500",
         className
       )}
     >

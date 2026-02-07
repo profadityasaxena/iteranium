@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: "Where are you located?",
     answer:
-      "We are headquartered in Toronto, Ontario, Canada, with additional offices in Pune, Delhi, and Bangalore, India. Our executive leadership, solution architects, and client engagement teams operate across all four locations to deliver global-scale manufacturing solutions.",
+      "We are based in Ontario, Canada. Our team can be reached via email or through the contact form on this page.",
   },
   {
     question: "Do you offer training programs?",
@@ -206,29 +206,12 @@ export default function ContactPage() {
 
               <Card className="p-6">
                 <div className="mb-4 flex items-center gap-2">
-                  <Building2 className="h-5 w-5 text-primary-500" />
-                  <h3 className="font-semibold">Our Offices</h3>
+                  <MapPin className="h-5 w-5 text-primary-500" />
+                  <h3 className="font-semibold">Location</h3>
                 </div>
-                <div className="space-y-4">
-                  {SITE_CONFIG.offices.map((office) => (
-                    <div key={office.city} className="flex gap-3">
-                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-slate-400" />
-                      <div>
-                        <p className="text-sm font-medium text-slate-900">
-                          {office.city}, {office.region}
-                          {office.isHQ && (
-                            <span className="ml-2 rounded-full bg-primary-50 px-2 py-0.5 text-xs font-medium text-primary-500">
-                              HQ
-                            </span>
-                          )}
-                        </p>
-                        <p className="text-xs text-slate-500">
-                          {office.country}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-sm text-slate-600">
+                  Ontario, Canada
+                </p>
               </Card>
             </div>
           </div>

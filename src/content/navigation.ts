@@ -19,7 +19,6 @@ export const mainNavigation: NavItem[] = [
   },
   { label: "Training & Incubation", href: "/training" },
   { label: "Industries", href: "/industries" },
-  { label: "Case Studies", href: "/case-studies" },
   { label: "Insights", href: "/insights" },
   { label: "Careers", href: "/careers" },
 ];

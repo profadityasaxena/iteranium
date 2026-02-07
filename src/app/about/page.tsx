@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Iteranium’s mission to drive Canadian innovation in Industry 4.0 digital transformation for manufacturers worldwide.",
+    "Learn about Iteranium's mission to advance Industry 4.0 digital transformation for manufacturers, building Canadian expertise and intellectual property.",
 };
 
 const values = [
@@ -29,7 +29,7 @@ const values = [
     icon: <Lightbulb className="h-6 w-6" />,
     title: "Innovation",
     description:
-      "We push the boundaries of what’s possible in manufacturing technology, developing proprietary AI that learns from real production data.",
+      "We push the boundaries of what is possible in manufacturing technology, advancing AI approaches that learn from real production data.",
   },
   {
     icon: <Target className="h-6 w-6" />,
@@ -54,27 +54,27 @@ const values = [
 const canadianImpact = [
   {
     icon: <Cpu className="h-6 w-6" />,
-    title: "Canadian IP Development",
+    title: "Canadian IP Vision",
     description:
-      "Our reinforcement-learning AI models and manufacturing optimization algorithms are developed and owned in Canada, contributing to the nation’s growing portfolio of advanced manufacturing IP.",
+      "We are developing reinforcement-learning AI models and manufacturing optimization approaches designed to be owned and commercialized in Canada—contributing to the nation's growing advanced manufacturing IP portfolio.",
   },
   {
     icon: <MapPin className="h-6 w-6" />,
-    title: "Ontario Operations",
+    title: "Ontario Headquarters",
     description:
-      "Headquartered in Ontario with our executive leadership, solution architects, and client engagement teams. We’re building a growing team of Canadian technology professionals.",
+      "Based in Ontario, we are building a team of Canadian technology professionals with deep expertise in manufacturing systems, AI, and operational technology.",
   },
   {
     icon: <Briefcase className="h-6 w-6" />,
-    title: "Local Industry Partnerships",
+    title: "Industry Collaboration",
     description:
-      "We work directly with Canadian manufacturers to strengthen the domestic advanced manufacturing ecosystem and improve global competitiveness.",
+      "We aim to partner with Canadian manufacturers and academic institutions to strengthen the domestic advanced manufacturing ecosystem and improve global competitiveness.",
   },
   {
     icon: <Users className="h-6 w-6" />,
     title: "Talent Development",
     description:
-      "Creating high-value technology jobs in Ontario and investing in the next generation of Canadian AI and manufacturing systems engineers.",
+      "Creating high-value technology jobs in Ontario and investing in the next generation of Canadian AI and manufacturing systems engineers through our training and incubation programs.",
   },
 ];
 
@@ -89,14 +89,13 @@ export default function AboutPage() {
               About Iteranium
             </p>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Canadian Innovation Powering the Next Generation of Smart
-              Manufacturing
+              Building the Next Generation of Intelligent Manufacturing Systems
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              We help discrete manufacturers modernize and optimize operations
-              through full-stack Industry 4.0 transformation. Our solutions
-              combine IIoT, MES, and reinforcement-learning AI that learns from
-              live shop-floor data.
+              We are focused on helping discrete manufacturers modernize and
+              optimize operations through full-stack Industry 4.0
+              transformation, combining IIoT, MES, and reinforcement-learning
+              AI designed to learn from live shop-floor data.
             </p>
           </div>
         </Container>
@@ -117,22 +116,22 @@ export default function AboutPage() {
                   Iteranium was founded with a clear conviction: discrete
                   manufacturers deserve technology partners who understand the
                   shop floor as well as the server room. Too many Industry 4.0
-                  initiatives fail because they’re led by IT generalists
-                  who don’t understand manufacturing operations.
+                  initiatives fail because they are led by IT generalists
+                  who do not understand manufacturing operations.
                 </p>
                 <p>
-                  We assembled a team of manufacturing systems engineers, AI
-                  researchers, and operational technology specialists who have
-                  worked inside factories—not just consulted for them. Our
-                  reinforcement-learning AI doesn’t rely on historical data
-                  alone; it learns continuously from live production, adapting
-                  to the realities of changeovers, material variability, and
-                  equipment aging.
+                  We are assembling a team of manufacturing systems engineers,
+                  AI researchers, and operational technology specialists who
+                  have worked inside factories—not just consulted for them. Our
+                  approach to AI goes beyond historical analytics; we are
+                  building reinforcement-learning systems designed to learn
+                  continuously from live production, adapting to the realities
+                  of changeovers, material variability, and equipment aging.
                 </p>
                 <p>
-                  Based in Ontario, Canada, we’re committed to developing
-                  world-class manufacturing AI right here at home—creating
-                  Canadian intellectual property that helps our manufacturers
+                  Based in Ontario, Canada, we are committed to developing
+                  world-class manufacturing AI right here at home—building
+                  Canadian intellectual property that will help manufacturers
                   compete on the global stage.
                 </p>
               </div>
@@ -205,8 +204,8 @@ export default function AboutPage() {
           </div>
           <SectionHeading
             eyebrow="Canadian Innovation"
-            heading="Driving Local Economic Development"
-            description="We’re building world-class manufacturing AI in Canada, creating high-value jobs and intellectual property that strengthens Ontario’s advanced manufacturing ecosystem."
+            heading="Contributing to Local Economic Development"
+            description="We are building manufacturing AI expertise in Canada, with the vision of creating high-value jobs and intellectual property that strengthens Ontario's advanced manufacturing ecosystem."
           />
           <div className="grid gap-8 sm:grid-cols-2">
             {canadianImpact.map((item) => (
