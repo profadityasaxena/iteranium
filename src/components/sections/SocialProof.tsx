@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { CERTIFICATIONS } from "@/lib/constants";
+import { PROCESS_STANDARDS } from "@/lib/constants";
 import { ShieldCheck } from "lucide-react";
 
 export function SocialProof() {
@@ -37,21 +37,24 @@ export function SocialProof() {
             </div>
           </div>
 
-          {/* Certifications */}
+          {/* Process Standards */}
           <div className="w-full border-t border-slate-200 pt-8">
+            <p className="mb-4 text-center text-xs font-semibold uppercase tracking-widest text-slate-400">
+              Built to Enterprise Standards
+            </p>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              {CERTIFICATIONS.map((cert) => (
+              {PROCESS_STANDARDS.map((standard) => (
                 <div
-                  key={cert.name}
+                  key={standard.name}
                   className="flex items-center gap-3 rounded-lg bg-white px-4 py-3 shadow-sm"
                 >
                   <ShieldCheck className="h-6 w-6 shrink-0 text-primary-500" />
                   <div>
                     <p className="text-sm font-semibold text-slate-700">
-                      {cert.name}
+                      {standard.name}
                     </p>
                     <p className="text-xs text-slate-400">
-                      {cert.description}
+                      {standard.description}
                     </p>
                   </div>
                 </div>

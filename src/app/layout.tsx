@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     description:
       "Full-stack Industry 4.0 transformation for discrete manufacturers.",
   },
+  icons: {
+    icon: "/images/favicon.png",
+  },
   robots: {
     index: true,
     follow: true,

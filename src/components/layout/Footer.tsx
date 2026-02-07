@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { SITE_CONFIG, CERTIFICATIONS } from "@/lib/constants";
+import { SITE_CONFIG, PROCESS_STANDARDS } from "@/lib/constants";
 
 const footerLinks = {
   company: [
@@ -63,12 +63,12 @@ export function Footer() {
               <span className="text-xs text-slate-500">Ontario, Canada</span>
             </div>
             <div className="flex flex-wrap gap-2 pt-2">
-              {CERTIFICATIONS.map((cert) => (
+              {PROCESS_STANDARDS.map((standard) => (
                 <span
-                  key={cert.name}
+                  key={standard.name}
                   className="rounded-md border border-slate-700 px-2 py-1 text-xs text-slate-400"
                 >
-                  {cert.name}
+                  {standard.name}
                 </span>
               ))}
             </div>

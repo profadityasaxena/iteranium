@@ -56,9 +56,11 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 right-0 left-0 z-50 transition-all duration-500",
-        isScrolled
-          ? "bg-white/80 shadow-lg shadow-slate-900/5 backdrop-blur-xl"
-          : "bg-white/60 backdrop-blur-sm"
+        isMobileOpen
+          ? "bg-white shadow-lg shadow-slate-900/5"
+          : isScrolled
+            ? "bg-white/80 shadow-lg shadow-slate-900/5 backdrop-blur-xl"
+            : "bg-white/60 backdrop-blur-sm"
       )}
     >
       {/* Gradient accent line */}
@@ -150,7 +152,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMobileOpen && (
-        <div className="fixed inset-0 top-[74px] z-40 bg-white/95 backdrop-blur-xl lg:hidden">
+        <div className="fixed inset-0 top-[74px] z-40 overflow-y-auto bg-white lg:hidden">
           <nav className="flex flex-col gap-1 p-4">
             {mainNavigation.map((item) => (
               <div key={item.label}>

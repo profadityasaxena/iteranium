@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { TeamGrid } from "@/components/sections/TeamGrid";
 import { CTASection } from "@/components/sections/CTASection";
-import { CERTIFICATIONS } from "@/lib/constants";
+import { PROCESS_STANDARDS } from "@/lib/constants";
 import {
   Target,
   Eye,
@@ -228,21 +228,21 @@ export default function AboutPage() {
       {/* Team */}
       <TeamGrid />
 
-      {/* Certifications */}
+      {/* Process Standards */}
       <section className="bg-slate-50 py-16 lg:py-24">
         <Container>
           <SectionHeading
-            eyebrow="Compliance"
-            heading="Certifications & Standards"
-            description="We maintain the highest standards of quality and security in everything we deliver."
+            eyebrow="Our Commitment"
+            heading="Built to Enterprise Standards"
+            description="Our engineering processes are designed to meet the rigour expected by enterprise and government stakeholders."
           />
           <div className="grid gap-6 sm:grid-cols-3">
-            {CERTIFICATIONS.map((cert) => (
-              <Card key={cert.name} className="text-center">
+            {PROCESS_STANDARDS.map((standard) => (
+              <Card key={standard.name} className="text-center">
                 <ShieldCheck className="mx-auto mb-3 h-10 w-10 text-primary-500" />
-                <h3 className="text-lg font-semibold">{cert.name}</h3>
+                <h3 className="text-lg font-semibold">{standard.name}</h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  {cert.description}
+                  {standard.description}
                 </p>
               </Card>
             ))}

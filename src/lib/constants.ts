@@ -11,8 +11,20 @@ export const SITE_CONFIG = {
   ],
 } as const;
 
-export const CERTIFICATIONS = [
-  { name: "ISO 27001", description: "Information Security Management" },
-  { name: "ISO 9001", description: "Quality Management System" },
-  { name: "CMMI Level 3", description: "Capability Maturity Model Integration" },
+export const PROCESS_STANDARDS = [
+  {
+    name: "Enterprise-Grade Security",
+    description:
+      "Rigorous information security practices and data protection built into every engagement",
+  },
+  {
+    name: "Quality-First Delivery",
+    description:
+      "Structured quality management processes across the full project lifecycle",
+  },
+  {
+    name: "Mature Engineering Processes",
+    description:
+      "Defined, repeatable, and continuously improving development practices",
+  },
 ] as const;
