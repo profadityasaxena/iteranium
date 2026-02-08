@@ -21,8 +21,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Aditya Saxena",
-    role: "Director | Technology & Solution Architecture",
-    bio: "Leads Iteranium's technology strategy and solution architecture, focusing on cloud-native Industry 4.0 platforms and intelligent manufacturing systems. He brings strong experience in cloud computing, IIoT architectures, industrial data platforms, data engineering, and applied data science, and is responsible for designing secure, scalable, and future-ready manufacturing solutions spanning MES, IIoT, AI/ML, and enterprise systems.",
+    role: "Director | Technology, AI & Solution Architecture",
+    bio: "Leads Iteranium's technology strategy and solution architecture, with deep hands-on experience in artificial intelligence, machine learning, and explainable AI. He combines this with strong expertise in cloud computing, full-stack development, IIoT architectures, industrial data platforms, and data engineering. Aditya is responsible for designing secure, scalable, and interpretable manufacturing intelligence systems—ensuring AI-driven decisions are transparent, auditable, and production-ready across MES, IIoT, and enterprise environments.",
     image: "/images/profiles/aditya.png",
   },
   {

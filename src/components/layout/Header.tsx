@@ -55,7 +55,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 right-0 left-0 z-50 transition-all duration-500",
+        "fixed top-0 right-0 left-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300",
         isMobileOpen
           ? "bg-white shadow-lg shadow-slate-900/5"
           : isScrolled
@@ -152,7 +152,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMobileOpen && (
-        <div className="fixed inset-0 top-[74px] z-40 overflow-y-auto bg-white lg:hidden">
+        <div className="fixed top-18.5 right-0 bottom-0 left-0 z-50 overflow-y-auto bg-white lg:hidden">
           <nav className="flex flex-col gap-1 p-4">
             {mainNavigation.map((item) => (
               <div key={item.label}>
