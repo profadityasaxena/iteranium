@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Clock, User, Calendar } from "lucide-react";
@@ -48,6 +49,13 @@ export default async function InsightDetailPage({
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 lg:py-24">
         <Container>
           <div className="mx-auto max-w-3xl">
+            <Image
+              src="/images/logo-white-bg.png"
+              alt="Iteranium"
+              width={200}
+              height={50}
+              className="mb-6 h-12 w-auto"
+            />
             <Link
               href="/insights"
               className="mb-6 inline-flex items-center gap-1 text-sm text-slate-500 hover:text-primary-500"

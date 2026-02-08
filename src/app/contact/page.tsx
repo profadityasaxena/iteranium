@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Input, Textarea } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
@@ -97,6 +98,13 @@ export default function ContactPage() {
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 lg:py-24">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
+            <Image
+              src="/images/logo-white-bg.png"
+              alt="Iteranium"
+              width={200}
+              height={50}
+              className="mx-auto mb-6 h-12 w-auto"
+            />
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-500">
               Contact
             </p>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
@@ -16,6 +17,13 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 lg:py-24">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
+            <Image
+              src="/images/logo-white-bg.png"
+              alt="Iteranium"
+              width={200}
+              height={50}
+              className="mx-auto mb-6 h-12 w-auto"
+            />
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-500">
               Our Services
             </p>
