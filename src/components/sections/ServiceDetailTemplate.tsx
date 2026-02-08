@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { CTASection } from "@/components/sections/CTASection";
+import { ServiceProcessFlow } from "@/components/sections/ServiceProcessFlow";
 import type { Service } from "@/types/content";
 
 interface ServiceDetailTemplateProps {
@@ -44,14 +44,7 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
             eyebrow="Capabilities"
             heading="What We Deliver"
           />
-          <div className="grid gap-8 md:grid-cols-2">
-            {service.features.map((feature) => (
-              <Card key={feature.title} className="p-8">
-                <h3 className="mb-3 text-xl font-semibold">{feature.title}</h3>
-                <p className="text-slate-600">{feature.description}</p>
-              </Card>
-            ))}
-          </div>
+          <ServiceProcessFlow features={service.features} />
         </Container>
       </section>
 
