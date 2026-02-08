@@ -14,16 +14,16 @@ export const PROCESS_STANDARDS = [
   {
     name: "Information Security",
     description:
-      "Rigorous data protection and security practices aligned with enterprise information security management principles",
+      "Rigorous data protection, access controls, and risk management aligned with enterprise-grade information security management principles",
   },
   {
     name: "Quality Management",
     description:
-      "Structured quality processes with risk-based thinking and continuous improvement across every project lifecycle",
+      "Structured documentation, risk-based thinking, and continuous improvement embedded across every project lifecycle and engagement",
   },
   {
     name: "Process Maturity",
     description:
-      "Defined, repeatable, and auditable engineering workflows designed around recognized process maturity frameworks",
+      "Defined, repeatable, and measured engineering workflows with consistent delivery standards and auditable governance",
   },
 ] as const;

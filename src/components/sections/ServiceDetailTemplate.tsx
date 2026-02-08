@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { CTASection } from "@/components/sections/CTASection";
 import { ServiceProcessFlow } from "@/components/sections/ServiceProcessFlow";
@@ -37,19 +38,38 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
         </Container>
       </section>
 
-      {/* Features */}
+      {/* Solutions */}
       <section className="py-16 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Capabilities"
             heading="What We Deliver"
           />
-          <ServiceProcessFlow features={service.features} />
+          <div className="grid gap-8 md:grid-cols-2">
+            {service.features.map((feature) => (
+              <Card key={feature.title} className="p-8">
+                <h3 className="mb-3 text-xl font-semibold">{feature.title}</h3>
+                <p className="text-slate-600">{feature.description}</p>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Implementation Approach */}
+      <section className="bg-slate-50 py-16 lg:py-24">
+        <Container>
+          <SectionHeading
+            eyebrow="How We Deliver"
+            heading="Our Implementation Approach"
+            description="Every engagement follows a consistent, proven framework — ensuring rigour, reliability, and measurable outcomes."
+          />
+          <ServiceProcessFlow steps={service.deliveryRoadmap} />
         </Container>
       </section>
 
       {/* Technologies */}
-      <section className="bg-slate-50 py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Technology Stack"
@@ -67,7 +87,7 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
       </section>
 
       {/* Benefits */}
-      <section className="py-16 lg:py-24">
+      <section className="bg-slate-50 py-16 lg:py-24">
         <Container>
           <SectionHeading
             eyebrow="Results"
@@ -94,7 +114,7 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
 
       <CTASection
         heading={`Ready to Get Started with ${service.title}?`}
-        description="Let’s discuss how we can transform your manufacturing operations."
+        description="Let's discuss how we can transform your manufacturing operations."
       />
     </>
   );

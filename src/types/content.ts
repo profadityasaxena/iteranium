@@ -5,6 +5,7 @@ export interface Service {
   longDescription: string;
   icon: string;
   features: { title: string; description: string }[];
+  deliveryRoadmap: { title: string; description: string }[];
   technologies: string[];
   benefits: { metric: string; description: string }[];
 }

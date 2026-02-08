@@ -30,6 +30,38 @@ export const digitalTransformation: Service = {
         "Align people, processes, and technology. We work with plant managers and operators to ensure adoption and sustained value realization.",
     },
   ],
+  deliveryRoadmap: [
+    {
+      title: "Walk the Floor & Understand the Current State",
+      description:
+        "We begin on the shop floor — talking to operators, observing workflows, and mapping the existing systems landscape. This means documenting every PLC, SCADA node, historian, MES screen, and manual workaround. We identify where data lives, where it doesn't, and where decisions are being made on gut feel instead of evidence.",
+    },
+    {
+      title: "Define Where You Need to Be and Why",
+      description:
+        "Working with your leadership and plant teams, we define a realistic target state — not a vendor brochure, but a picture of what your operations look like when key pain points are resolved. We map each gap to a business outcome: downtime reduction, quality improvement, faster changeovers, better visibility.",
+    },
+    {
+      title: "Build the Transformation Roadmap in Phases",
+      description:
+        "We design a phased execution plan where every phase delivers measurable value on its own. No big-bang cutovers. Each phase is scoped, costed, and risk-assessed — with clear acceptance criteria so you know exactly what 'done' looks like before work begins.",
+    },
+    {
+      title: "Modernize Incrementally Without Disrupting Production",
+      description:
+        "Legacy systems are migrated piece by piece — bridging old PLCs to modern data layers, replacing paper-based processes with digital workflows, and connecting siloed systems into a unified architecture. Production never stops; each change is validated in the live environment before moving forward.",
+    },
+    {
+      title: "Train Your Team and Transfer Ownership",
+      description:
+        "Technology is only useful if your people can operate it. We run structured knowledge transfer sessions with operators, engineers, and IT staff — building internal capability so your team owns the new systems, not us. Documentation, runbooks, and escalation paths are all part of the handover.",
+    },
+    {
+      title: "Measure, Learn, and Refine Continuously",
+      description:
+        "After go-live, we track KPIs against the baseline we established in step one. Where outcomes fall short, we investigate and adjust. Where they exceed expectations, we capture what worked and apply it to the next phase. The roadmap evolves with your operation.",
+    },
+  ],
   technologies: [
     "Azure IoT Hub",
     "AWS Industrial",

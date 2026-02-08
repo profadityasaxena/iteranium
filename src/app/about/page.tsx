@@ -257,6 +257,12 @@ export default function AboutPage() {
               </Card>
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-xs text-slate-400">
+            We operate in alignment with these internationally recognized
+            frameworks. While we do not hold formal certifications, our internal
+            processes, governance, and delivery standards are designed to meet
+            these benchmarks.
+          </p>
         </Container>
       </section>
 
