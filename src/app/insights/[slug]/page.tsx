@@ -52,9 +52,9 @@ export default async function InsightDetailPage({
             <Image
               src="/images/logo-white-bg.png"
               alt="Iteranium"
-              width={200}
-              height={50}
-              className="mb-6 h-12 w-auto"
+              width={400}
+              height={100}
+              className="mb-6 h-24 w-auto"
             />
             <Link
               href="/insights"

@@ -59,9 +59,9 @@ export default function ServicesPage() {
             <Image
               src="/images/logo-white-bg.png"
               alt="Iteranium"
-              width={200}
-              height={50}
-              className="mx-auto mb-6 h-12 w-auto"
+              width={400}
+              height={100}
+              className="mx-auto mb-6 h-24 w-auto"
             />
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-500">
               Our Services

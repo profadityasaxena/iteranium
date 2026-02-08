@@ -20,9 +20,9 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
             <Image
               src="/images/logo-white-bg.png"
               alt="Iteranium"
-              width={200}
-              height={50}
-              className="mx-auto mb-6 h-12 w-auto"
+              width={400}
+              height={100}
+              className="mx-auto mb-6 h-24 w-auto"
             />
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-500">
               Our Services
@@ -86,11 +86,16 @@ export function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
               <div key={benefit.description} className="text-center">
                 <p className="text-4xl font-bold text-primary-500 lg:text-5xl">
                   {benefit.metric}
+                  <span className="text-2xl">*</span>
                 </p>
                 <p className="mt-2 text-slate-600">{benefit.description}</p>
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center text-xs text-slate-400">
+            * Based on outcomes from 50+ implementations delivered by our
+            founding team.
+          </p>
         </Container>
       </section>
 

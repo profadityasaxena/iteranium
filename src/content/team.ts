@@ -3,7 +3,7 @@ import type { TeamMember } from "@/types/content";
 export const teamMembers: TeamMember[] = [
   {
     name: "Tarek Sabra",
-    role: "Chief Strategist | Market Strategy & Growth",
+    role: "Director & Chief Strategist | Market Strategy & Growth",
     bio: "Serves as Iteranium's Chief Strategist, driving market positioning, go-to-market strategy, and strategic partnerships. He brings deep expertise in market strategy, client engagement, and commercialization of complex technology solutions, ensuring Iteranium's offerings are clearly differentiated, market-aligned, and scalable across industries and regions.",
     image: "/images/profiles/tarek.png",
   },

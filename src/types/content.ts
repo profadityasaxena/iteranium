@@ -13,6 +13,7 @@ export interface Industry {
   slug: string;
   name: string;
   description: string;
+  processSteps: { title: string; detail: string }[];
 }
 
 export interface CaseStudy {
