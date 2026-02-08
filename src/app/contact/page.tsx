@@ -9,7 +9,6 @@ import { Card } from "@/components/ui/Card";
 import { SITE_CONFIG } from "@/lib/constants";
 import {
   Mail,
-  Phone,
   MapPin,
   ChevronDown,
   RefreshCw,
@@ -216,7 +215,7 @@ export default function ContactPage() {
                     label="Phone (Optional)"
                     name="phone"
                     type="tel"
-                    placeholder="+1 (437) 848-9595"
+                    placeholder="+1 (xxx) xxx-xxxx"
                   />
                 </div>
                 <div className="space-y-1">
@@ -266,18 +265,6 @@ export default function ContactPage() {
                         className="text-sm text-primary-500 hover:underline"
                       >
                         {SITE_CONFIG.email}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <Phone className="h-6 w-6 shrink-0 text-primary-500" />
-                    <div>
-                      <h3 className="font-semibold">Phone</h3>
-                      <a
-                        href={`tel:${SITE_CONFIG.phone}`}
-                        className="text-sm text-primary-500 hover:underline"
-                      >
-                        {SITE_CONFIG.phone}
                       </a>
                     </div>
                   </div>
