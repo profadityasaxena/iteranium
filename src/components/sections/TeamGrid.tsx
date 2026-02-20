@@ -36,11 +36,13 @@ function MemberCard({ member }: { member: TeamMember }) {
 }
 
 export function TeamGrid() {
-  // Directors: Tarek, Vineet, Bhavik (row 1), Aditya (centred row 2)
-  const directorsRow1 = teamMembers.slice(0, 3);
-  const directorsRow2 = teamMembers[3]; // Aditya
-  // Managers: Shraddha, Avneet
-  const managers = teamMembers.slice(4);
+  const directors = teamMembers.filter((m) => m.tier === "director");
+  const principals = teamMembers.filter((m) => m.tier === "principal");
+  const managers = teamMembers.filter((m) => m.tier === "manager");
+
+  // Directors: first 3 in a row, last one (Aditya) centred
+  const directorsRow1 = directors.slice(0, 3);
+  const directorsRow2 = directors[3];
 
   return (
     <section className="py-16 lg:py-24">
@@ -50,9 +52,7 @@ export function TeamGrid() {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary-500">
             Leadership
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight">
-            Directors
-          </h2>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight">Directors</h2>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -62,10 +62,26 @@ export function TeamGrid() {
         </div>
 
         {/* Aditya — centred for emphasis */}
-        <div className="mt-8 flex justify-center">
-          <div className="w-full max-w-sm">
-            <MemberCard member={directorsRow2} />
+        {directorsRow2 && (
+          <div className="mt-8 flex justify-center">
+            <div className="w-full max-w-sm">
+              <MemberCard member={directorsRow2} />
+            </div>
           </div>
+        )}
+
+        {/* Principals */}
+        <div className="mb-6 mt-16 text-center">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary-500">
+            Subject Matter Experts
+          </p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight">Principals</h2>
+        </div>
+
+        <div className="mx-auto grid max-w-2xl gap-8 sm:grid-cols-2">
+          {principals.map((member) => (
+            <MemberCard key={member.name} member={member} />
+          ))}
         </div>
 
         {/* Managers */}
@@ -73,9 +89,7 @@ export function TeamGrid() {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary-500">
             Management
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight">
-            Managers
-          </h2>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight">Managers</h2>
         </div>
 
         <div className="mx-auto grid max-w-2xl gap-8 sm:grid-cols-2">

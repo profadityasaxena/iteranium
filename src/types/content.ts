@@ -57,6 +57,7 @@ export interface TeamMember {
   role: string;
   bio: string;
   image: string;
+  tier: "director" | "principal" | "manager";
   linkedin?: string;
 }
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SITE_CONFIG, PROCESS_STANDARDS } from "@/lib/constants";
+import { RegionToggle } from "./RegionToggle";
 
 const footerLinks = {
   company: [
@@ -139,7 +140,8 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights
             reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex items-center gap-6">
+            <RegionToggle variant="footer" />
             <Link
               href="/privacy"
               className="text-sm text-slate-500 transition-colors hover:text-slate-300"

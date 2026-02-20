@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { NavLink } from "./NavLink";
+import { RegionToggle } from "./RegionToggle";
 import { mainNavigation } from "@/content/navigation";
 import { cn } from "@/lib/utils";
 
@@ -126,7 +127,8 @@ export function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          <div className="hidden items-center gap-3 lg:flex">
+            <RegionToggle />
             <Link
               href="/contact"
               className="relative inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-primary-600 to-primary-500 px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-primary-500/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/40 hover:brightness-110"

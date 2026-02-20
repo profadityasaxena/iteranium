@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { RegionProvider } from "@/context/RegionContext";
+import { RegionSelector } from "@/components/layout/RegionSelector";
 import "./globals.css";
 
 const inter = Inter({
@@ -63,9 +65,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <Header />
-        <main className="min-h-screen pt-20 lg:pt-24">{children}</main>
-        <Footer />
+        <RegionProvider>
+          <RegionSelector />
+          <Header />
+          <main className="min-h-screen pt-20 lg:pt-24">{children}</main>
+          <Footer />
+        </RegionProvider>
       </body>
     </html>
   );

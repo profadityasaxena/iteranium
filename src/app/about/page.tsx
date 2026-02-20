@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { CTASection } from "@/components/sections/CTASection";
+import { EngineersManifesto } from "@/components/sections/EngineersManifesto";
 import { PROCESS_STANDARDS } from "@/lib/constants";
 import {
   Target,
@@ -174,6 +175,8 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
+
+      <EngineersManifesto />
 
       {/* Values */}
       <section className="bg-slate-50 py-16 lg:py-24">
