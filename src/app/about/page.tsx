@@ -202,20 +202,20 @@ export default function AboutPage() {
       {/* Canadian Economic Impact */}
       <section className="py-16 lg:py-24">
         <Container>
-          <div className="mb-8 flex items-center justify-center gap-8">
+          <div className="mb-8 flex items-center justify-center gap-16">
             <Image
               src="/images/canada.png"
               alt="Canada"
-              width={240}
-              height={240}
-              className="h-48 w-48 object-contain sm:h-60 sm:w-60"
+              width={160}
+              height={160}
+              className="h-28 w-28 object-contain sm:h-36 sm:w-36"
             />
             <Image
               src="/images/ontario.png"
               alt="Ontario"
-              width={240}
-              height={240}
-              className="h-48 w-48 object-contain sm:h-60 sm:w-60"
+              width={160}
+              height={160}
+              className="h-28 w-28 object-contain sm:h-36 sm:w-36"
             />
           </div>
           <SectionHeading

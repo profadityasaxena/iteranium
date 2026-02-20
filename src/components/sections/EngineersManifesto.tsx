@@ -4,59 +4,108 @@ export function EngineersManifesto() {
   return (
     <section className="bg-slate-950 py-24">
       <Container>
-        <div className="mx-auto max-w-3xl">
-          <div className="mb-12 text-center">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary-400">
-              Our Belief
+        <div className="mx-auto max-w-2xl text-center">
+          {/* Section label */}
+          <p className="mb-6 text-sm font-semibold uppercase tracking-widest text-primary-400">
+            Manifesto
+          </p>
+
+          {/* Rule */}
+          <div className="mb-10 h-px bg-linear-to-r from-transparent via-slate-700 to-transparent" />
+
+          {/* Title */}
+          <h2 className="mb-12 text-3xl font-bold uppercase tracking-widest text-white sm:text-4xl">
+            We Are Engineers
+          </h2>
+
+          {/* Body */}
+          <div className="space-y-8 text-slate-300">
+            <p className="leading-relaxed">
+              There are people who model economies.<br />
+              There are people who write policies.<br />
+              There are people who argue cases.
             </p>
-            <h2 className="text-4xl font-bold text-white">We Are Engineers</h2>
+
+            <p className="text-lg font-semibold text-white">
+              Engineers build the systems that make civilization work.
+            </p>
+
+            <p className="leading-relaxed">
+              Rockets do not reach orbit because someone drafted a strategy deck.<br />
+              Factories do not become intelligent because a committee approved a roadmap.<br />
+              AI does not transform industry because it sounds impressive.
+            </p>
+
+            <p className="font-medium text-slate-200">
+              It happens when engineers sit down and design something that actually works.
+            </p>
+
+            <p className="leading-relaxed">
+              Engineering is applied physics.<br />
+              Applied mathematics.<br />
+              Applied research.<br />
+              Turned into machines, code, infrastructure, and production systems.
+            </p>
+
+            <p className="text-lg font-semibold text-white">
+              We believe Industry 4.0 and Industry 5.0 are not consulting trends.<br />
+              They are engineering problems.
+            </p>
+
+            <p className="leading-relaxed text-slate-400">
+              Integrate machines.<br />
+              Connect data.<br />
+              Design architectures.<br />
+              Train models.<br />
+              Deploy systems.<br />
+              Measure reality.<br />
+              Improve it.
+            </p>
+
+            <p className="text-xl font-bold tracking-widest text-primary-400">
+              Repeat.
+            </p>
+
+            <p className="leading-relaxed">
+              Engineers take fundamental research and convert it into operating capability.<br />
+              They build spacecraft.<br />
+              They build power grids.<br />
+              They build manufacturing systems.<br />
+              They build the intelligence layer on top of industry.
+            </p>
+
+            <p className="leading-relaxed text-slate-400">
+              We respect strategy.<br />
+              We understand governance.<br />
+              We align with business objectives.
+            </p>
+
+            <p className="text-lg font-semibold text-white">
+              But none of it matters if the system doesn&apos;t run.
+            </p>
+
+            <p className="font-medium text-slate-200">
+              We are here to build systems that run.
+            </p>
+
+            <p className="leading-relaxed text-slate-400">
+              Production-ready.<br />
+              Scalable.<br />
+              Grounded in physics.<br />
+              Auditable.<br />
+              Real.
+            </p>
+
+            <div className="border-t border-slate-800 pt-8">
+              <p className="mb-2 text-slate-400">That is how progress happens.</p>
+              <p className="text-xl font-bold text-primary-400">
+                And that is what we do.
+              </p>
+            </div>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-lg leading-relaxed text-slate-300">
-              We believe that the most complex systems in the world — the ones
-              that feed, transport, and build civilization — deserve the same
-              rigour, intelligence, and precision that we bring to any great
-              engineering challenge.
-            </p>
-
-            <p className="text-lg font-semibold leading-relaxed text-white">
-              We are not consultants who parachute in with frameworks. We are
-              engineers who walk factory floors, understand the hum of a CNC
-              machine, and know why a three-second cycle time matters.
-            </p>
-
-            <p className="text-lg leading-relaxed text-slate-300">
-              We think in first principles. We design from constraints. We
-              validate against production reality — not presentation decks.
-            </p>
-
-            <p className="text-lg leading-relaxed text-slate-300">
-              We believe automation is not about replacing people. It is about
-              freeing people to do the work that only people can do.
-            </p>
-
-            <p className="text-lg font-semibold leading-relaxed text-white">
-              We believe data without decisions is noise. Intelligence means
-              acting on what you know — with the confidence that your systems
-              have earned it.
-            </p>
-
-            <p className="text-lg leading-relaxed text-slate-300">
-              We believe every manufacturer — regardless of size — deserves
-              access to world-class engineering thinking. The competitive edge
-              of precision and intelligence should not belong only to the
-              largest corporations.
-            </p>
-
-            <p className="text-lg leading-relaxed text-slate-300">
-              We build for the long run. Not for the demo.
-            </p>
-
-            <p className="border-t border-slate-800 pt-8 text-xl font-bold text-primary-400">
-              We are Iteranium. We are engineers.
-            </p>
-          </div>
+          {/* Rule */}
+          <div className="mt-10 h-px bg-linear-to-r from-transparent via-slate-700 to-transparent" />
         </div>
       </Container>
     </section>
