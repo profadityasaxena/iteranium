@@ -78,7 +78,7 @@ export function TeamGrid() {
           <h2 className="mt-2 text-3xl font-bold tracking-tight">Principals</h2>
         </div>
 
-        <div className="mx-auto grid max-w-2xl gap-8 sm:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {principals.map((member) => (
             <MemberCard key={member.name} member={member} />
           ))}
@@ -92,9 +92,11 @@ export function TeamGrid() {
           <h2 className="mt-2 text-3xl font-bold tracking-tight">Managers</h2>
         </div>
 
-        <div className="mx-auto grid max-w-2xl gap-8 sm:grid-cols-2">
+        <div className="flex justify-center">
           {managers.map((member) => (
-            <MemberCard key={member.name} member={member} />
+            <div key={member.name} className="w-full max-w-sm">
+              <MemberCard member={member} />
+            </div>
           ))}
         </div>
       </Container>

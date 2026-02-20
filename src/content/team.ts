@@ -47,14 +47,15 @@ export const teamMembers: TeamMember[] = [
     image: "/images/profiles/garima.png",
   },
 
-  // ── Managers ───────────────────────────────────────────────
   {
     name: "Shraddha Padwekar",
-    role: "Manager | Digital Transformation Delivery",
-    tier: "manager",
+    role: "Principal | Digital Transformation Delivery",
+    tier: "principal",
     bio: "Supports the delivery of digital transformation initiatives for Industry 4.0, working across IIoT, MES, and manufacturing intelligence programs. She brings hands-on experience in coordinating cross-functional teams, translating business requirements into execution plans, and supporting structured delivery of smart manufacturing solutions. Shraddha plays a key role in ensuring alignment between technology implementation and operational outcomes.",
     image: "/images/profiles/shraddha.png",
   },
+
+  // ── Managers ───────────────────────────────────────────────
   {
     name: "Avneet Hazooria",
     role: "Manager | Project Management & Operations",
