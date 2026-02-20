@@ -59,7 +59,7 @@ export function RegionSelector() {
           alt="Iteranium"
           width={600}
           height={150}
-          className="mb-12 h-16 w-auto opacity-95"
+          className="mb-12 h-40 w-auto opacity-95"
           priority
         />
 
